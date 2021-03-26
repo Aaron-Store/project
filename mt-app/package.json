@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "bootstrap": "^3.4.1",
+    "bootstrap": "^4.6.0",
     "core-js": "^2.6.5",
     "element-ui": "^2.15.1",
     "jquery": "^3.6.0",

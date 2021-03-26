@@ -1,7 +1,5 @@
 <template>
-  <div id="app" class="container">
     <page-index></page-index>
-  </div>
 </template>
 
 <script>
@@ -14,3 +12,5 @@ export default {
   }
 };
 </script>
+<style lang="scss">
+</style>

@@ -1,0 +1,16 @@
+@import "@/common/sass/public/header/index.scss";
+
+.el-container {
+    width: 100%;
+    .el-header,
+    .el-main,
+    .el-footer {
+        width: 100%;
+    }
+    .my-header,
+    .my-main,
+    .my-footer {
+        width: 1190px;
+        margin: 0 auto;
+    }
+}

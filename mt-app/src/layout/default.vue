@@ -1,21 +1,22 @@
 <template>
-  <div class="contianer">
-    <header class="my-header">
-        <div class="row">
-            <div-col-6>
-              header-left
-            </div-col-6>
-            <div-col-6>
-              header-right
-            </div-col-6>
-        </div>
-        <div class="row"></div>
-    </header>
-    <main>main</main>
-    <footer>footer</footer>
-  </div>
+  <el-container>
+    <el-header>
+      <my-header />
+    </el-header>
+    <el-main>Main</el-main>
+    <el-footer>Footer</el-footer>
+  </el-container>
 </template>
 
-<style lang="scss" scoped>
-@import "@/common/sass/public/header.scss";
+<script>
+import MyHeader from "@/components/header/index.vue";
+export default {
+  components: {
+    MyHeader,
+  },
+};
+</script>
+
+<style lang="scss">
+@import "@/common/sass/public/layout.scss";
 </style>
