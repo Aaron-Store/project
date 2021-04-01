@@ -1,5 +1,7 @@
 <template>
-    <page-index></page-index>
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>

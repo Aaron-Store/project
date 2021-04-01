@@ -1,6 +1,8 @@
 <template>
     <div class="page-index">
-        <layout-default></layout-default>
+        <layout-default>
+          
+        </layout-default>
     </div>
 </template>
 

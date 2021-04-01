@@ -1,11 +1,13 @@
 @import "@/common/sass/public/header/index.scss";
 
+$themeColor: orange;
 .el-container {
     width: 100%;
     .el-header,
     .el-main,
     .el-footer {
         width: 100%;
+        height: auto !important;
     }
     .my-header,
     .my-main,
