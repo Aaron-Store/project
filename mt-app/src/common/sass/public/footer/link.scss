@@ -1,0 +1,27 @@
+.my-footer-link {
+    font-size: 12px;
+    line-height: 2;
+    padding: 40px 45px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    .el-col {
+        // border: 1px solid #999;
+        // height: 100px;
+        dl {
+            user-select: none;
+            padding-bottom: 20px;
+            dt {
+                color: #333;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            dd {
+                color: #999;
+                &:hover{
+                    color: $themeColor;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

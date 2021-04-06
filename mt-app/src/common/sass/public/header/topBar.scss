@@ -61,7 +61,7 @@ $hover: orange;
     .m-nav {
         display: flex;
         justify-content: flex-end;
-        z-index: 999;
+        z-index: 100;
         ul.nav {
             display: flex;
             > li {
@@ -80,6 +80,7 @@ $hover: orange;
 
                     > dl {
                         display: block;
+                        z-index: 200;
                         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
                     }
                     .subContainer {
@@ -90,9 +91,10 @@ $hover: orange;
                         content: "";
                         position: absolute;
                         width: 100%;
-                        height: 4px;
+                        height: 3px;
                         background-color: $bgc;
-                        z-index: 999;
+                        // background-color:#0ff;
+                        z-index: 300;
                         bottom: -2px;
                         left: 0;
                     }
@@ -100,7 +102,6 @@ $hover: orange;
                 dl {
                     background: #fff;
                     display: none;
-                    z-index: 999;
                     position: absolute;
                     left: -1px;
                     width: 78px;
@@ -123,7 +124,7 @@ $hover: orange;
                     width: 1190px;
                     position: absolute;
                     right: -1px;
-                    z-index: 999;
+                    z-index: 101;
                     border: 1px solid #e5e5e5;
                     display: none;
                     text-align: left;

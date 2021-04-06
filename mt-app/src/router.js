@@ -4,13 +4,20 @@ Vue.use(router);
 
 import PageIndex from "@/page/index";
 import PageLogin from "@/page/login";
-import LayoutBlank from "@/layout/blank";
-
+import LayoutDefault from "@/layout/default";
+import PageRegister from "@/page/register";
+import PageChangeCity from "@/page/changeCity";
 const routes = [
-    { path: "/", redirect: "index", component: PageIndex, },
-    { path: "/blank", name: "blank", component: LayoutBlank },
-    { path: "/index", name: "index", component: PageIndex },
+    {
+        path: "/", name: "defaultPage", component: LayoutDefault,
+        redirect: "/index",
+        children: [
+            { path: "index", name: "index", component: PageIndex },
+            { path: "changeCity", name: "changeCity", component: PageChangeCity }
+        ]
+    },
     { path: "/login", name: "login", component: PageLogin },
+    { path: "/register", name: "register", component: PageRegister },
 ]
 
 

@@ -1,10 +1,12 @@
 <template>
   <el-row class="search">
     <el-col :span="3" class="logo">
-      <img
-        src="//s0.meituan.net/bs/fe-web-meituan/10afbf1/img/logo.png"
-        alt="美团"
-      />
+      <router-link :to="{name:'index'}">
+        <img
+          src="//s0.meituan.net/bs/fe-web-meituan/10afbf1/img/logo.png"
+          alt="美团"
+        />
+      </router-link>
     </el-col>
     <el-col :span="13">
       <div class="wrapper">

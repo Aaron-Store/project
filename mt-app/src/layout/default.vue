@@ -1,10 +1,14 @@
 <template>
   <el-container>
-    <el-header>
-      <my-header height="" />
+    <el-header height="">
+      <my-header />
     </el-header>
-    <el-main>Main</el-main>
-    <el-footer height="">Footer</el-footer>
+    <el-main style="padding: 0">
+      <router-view></router-view>
+    </el-main>
+    <el-footer height="">
+      <my-footer />
+    </el-footer>
   </el-container>
 </template>
 
@@ -14,7 +18,7 @@ import MyFooter from "@/components/footer/index.vue";
 export default {
   components: {
     MyHeader,
-    MyFooter
+    MyFooter,
   },
 };
 </script>

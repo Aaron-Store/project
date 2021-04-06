@@ -1,4 +1,5 @@
 @import "@/common/sass/public/header/index.scss";
+@import "@/common/sass/public/footer/index.scss";
 
 $themeColor: orange;
 .el-container {
@@ -8,6 +9,12 @@ $themeColor: orange;
     .el-footer {
         width: 100%;
         height: auto !important;
+        margin: 0 auto;
+        padding: 0;
+        overflow: unset;
+        .el-row{
+            margin: unset;
+        }
     }
     .my-header,
     .my-main,
@@ -15,4 +22,14 @@ $themeColor: orange;
         width: 1190px;
         margin: 0 auto;
     }
+    .el-header{
+        background-color: #F8F8F8;
+    }
+    // .el-main{
+    //     // background-color: #0095d9;
+    // }
+    .red{
+        color: #f40;
+    }
+
 }

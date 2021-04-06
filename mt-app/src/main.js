@@ -4,7 +4,9 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import "@/assets/css/reset.css";
 import router from "@/router.js";
-import api from "@/api/api.js"
+import api from "@/api/api.js";
+import '@/assets/font/iconfont.css';
+import '@/assets/font/iconfont.js';
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
 Vue.prototype.$http = api;

@@ -13,6 +13,6 @@ export default {
     pageIndex,
   }
 };
-</script>
+</script>       
 <style lang="scss">
 </style>

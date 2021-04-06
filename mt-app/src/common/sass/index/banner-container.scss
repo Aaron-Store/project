@@ -1,0 +1,192 @@
+.banner-container {
+    // padding: 20px 0;
+    user-select: none;
+    .banner-left {
+        .banner-nav-container {
+            position: relative;
+            .banner-nav-content {
+                font-size: 0.9rem;
+                color: #646464;
+                background: #fff;
+                text-align: left;
+                box-sizing: border-box;
+                margin-top: -50px;
+                dl {
+                    box-sizing: border-box;
+                    border: 1px solid #e5e5e5;
+                    display: flex;
+                    height: 475px;
+                    padding-bottom: 0.5em;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    dt {
+                        padding: 15px 0 8px;
+                        color: #222222;
+                        font-size: 16px;
+                        font-weight: 700;
+                        margin-left: 15px;
+                        height: 50px;
+                        box-sizing: border-box;
+                    }
+                    dd {
+                        // position: relative;
+                        // box-sizing: border-box;
+                        // padding: 2px 12px;
+                        // height: 26px;
+                        vertical-align: middle;
+                        padding-left: 8px;
+                        color: #646464;
+                        cursor: pointer;
+                        span {
+                            font-size: 13px;
+                            line-height: 20px;
+                            height: 20px;
+                            box-sizing: border-box;
+                        }
+                        .icon {
+                            font-size: 1.5em;
+                            vertical-align: middle;
+                        }
+                        &:hover {
+                            background: rgba(255, 150, 0, 0.08);
+                            cursor: pointer;
+                            font-weight: bold;
+                            color: #222222;
+                            span {
+                                color: #222222;
+                            }
+                        }
+                    }
+                }
+            }
+            .banner-nav-detail {
+                display: none;
+            }
+        }
+    }
+    .banner-right {
+        height: 415px;
+        // background-color: #0f0;
+        position: relative;
+        margin-top: 10px;
+        box-sizing: border-box;
+        .banner-header-links {
+            position: absolute;
+            top: -45px;
+            left: 10px;
+            a {
+                color: #222;
+                font-weight: 700;
+                font-size: 16px;
+                margin: 0 20px;
+                cursor: pointer;
+                position: relative;
+                &:hover {
+                    color: orange;
+                }
+            }
+        }
+
+        .banner-row {
+            width: 950px;
+            height: 240px;
+            display: flex;
+            margin-left: 10px;
+
+            .item.banner-silder {
+                width: 550px;
+                height: 100%;
+                box-sizing: border-box;
+                img {
+                    height: 240px;
+                    width: 100%;
+                }
+                .el-carousel__arrow:hover{
+                    background-color: rgba(0,0,0,.5);
+                    
+                }
+            }
+            .item.banner-pic {
+                width: 150px;
+                height: 240px;
+                margin: 0 10px;
+                background-image: url("http://p0.meituan.net/codeman/e473bb428f070321269b23370ff02ba956209.jpg");
+                background-repeat: no-repeat;
+                background-size: 150px;
+                cursor: pointer;
+            }
+            .item.banner-login-card {
+                width: 230px;
+                height: 240px;
+                border: 1px solid #e5e5e5;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                .el-button + .el-button {
+                    margin-left: unset;
+                }
+                .el-button {
+                    width: 118px;
+                }
+                img {
+                    width: 47px;
+                    height: 47px;
+                    border-radius: 50%;
+                    margin-top: 10px;
+                }
+            }
+
+            // row-2
+            .banner-pic1 {
+                width: 270px;
+                height: 165px;
+                background-image: url("http://p1.meituan.net/codeman/8cce56c467a17e04f3094d1e455462a0132772.png");
+                background-repeat: no-repeat;
+                cursor: pointer;
+                background-size: 270px;
+            }
+            .banner-pic2 {
+                width: 270px;
+                height: 165px;
+                background-image: url("http://p1.meituan.net/codeman/16442c19da1f1c4544f794e29d99c92051716.jpg");
+                background-repeat: no-repeat;
+                cursor: pointer;
+                background-size: 270px;
+                margin: 0 10px;
+            }
+            .banner-pic3 {
+                width: 150px;
+                height: 165px;
+                background-image: url("http://p1.meituan.net/codeman/5b21cddb4bb1cbc3a9c3bce0f726c75940469.jpg");
+                background-repeat: no-repeat;
+                cursor: pointer;
+                background-size: 150px;
+           
+            }
+            .down-app{
+                width: 230px;
+                height: 165px;
+                border: 1px solid #e5e5e5;
+                margin-left: 10px;
+                text-align: center;
+                font-size: 1em;
+                img{
+                    width: 100px;
+
+                }
+                .last-p{
+                    font-size: .5em;
+                    margin-top: 10px;
+                    .red{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// header {
+//     opacity: 0.6;
+// }
