@@ -1,0 +1,102 @@
+.page {
+    width: 1190px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    .city {
+        margin: 10px 20px;
+        color: #666;
+        display: inline-block;
+        font-size: 14px;
+        :hover {
+            color: #222222;
+            font-weight: 500;
+        }
+    }
+    h3 {
+        font-size: 16px;
+        color: #333;
+        font-weight: 500;
+        // vertical-align: top;
+        vertical-align: middle;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    > .el-row:not(:last-of-type) {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    > .el-row:not(:first-of-type) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &.el-row:last-of-type {
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+    }
+    .op-area {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        .left {
+            display: flex;
+            align-items: center;
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            margin-left: 50px;
+            display: flex;
+        }
+    }
+
+    .citylist {
+        .rm-city {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    .alphabet {
+        display: flex;
+        .r-info {
+            display: inline-block;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            flex: 1;
+            user-select: none;
+            .letter {
+                font-size: 15px;
+                color: #666;
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                padding-top: 2px;
+                cursor: pointer;
+                box-sizing: border-box;
+                text-align: center;
+                border-radius: 50%;
+            }
+        }
+    }
+    .alphabet-city-area {
+        .city-area {
+            padding: 13px 30px 13px 10px;
+            .city-label {
+                box-sizing: border-box;
+                vertical-align: top;
+                padding-top: 10px;
+                display: inline-block;
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                color: #222222;
+                background: #ffd000;
+            }
+        }
+    }
+}

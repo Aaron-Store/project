@@ -1,15 +1,17 @@
 <template>
   <div class="page-index">
-    <BannerContainer />
-    
+    <banner-container />
+    <container />
   </div>
 </template>
 
 <script>
-import BannerContainer from "@/components/index/banner";
+import BannerContainer from "@/components/index/banner.vue";
+import container from "@/components/index/container.vue";
 export default {
   components: {
     BannerContainer,
+    container
   },
 };
 </script>

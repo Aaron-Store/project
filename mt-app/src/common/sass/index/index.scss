@@ -1,9 +1,9 @@
 @import '@/common/sass/index/banner-container.scss';
+@import '@/common/sass/index/container.scss';
 .page-index{
     width: 1190px;
-    // background-color: #0f0;
     margin: 0 auto;
-    z-index: 800;
+    margin-bottom: 50px;
 }
 html{
     font-size: 10px;

@@ -1,0 +1,90 @@
+.page-index .container {
+    width: 100%;
+    .content-item {
+        width: 100%;
+        margin-top: 40px;
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            &:hover {
+                .btn {
+                    opacity: 1;
+                }
+            }
+            .btn {
+                opacity: 0;
+                transition: opacity .5s;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.6);
+                color: #fff;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                user-select: none;
+                line-height: 40px;
+                text-align: center;
+                font-size: 1.3em;
+                cursor: pointer;
+                &.prev {
+                    left: 0;
+                }
+                &.next {
+                    right: 0;
+                }
+            }
+            .slider-box {
+                width: 1000%;
+                padding-top: 2px;
+                position: relative;
+                padding-left: 10px;
+                .slider-item-film {
+                    height: 297px;
+                    width: 214px;
+                    float: left;
+                    margin-right: 19px;
+                    position: relative;
+                    border-radius: 3px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    img {
+                        width: 100%;
+                    }
+                    .film-info {
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        color: #efefef;
+                        box-sizing: border-box;
+                        padding-bottom: 1em;
+                        padding-left: 0.5em;
+                        padding-right: 0.5em;
+                        font-size: 16px;
+                        // background-color: #0f0;
+                        .film-score {
+                            font-size: 12px;
+                            font-weight: bold;
+                            margin-bottom: 6px;
+                            span {
+                                font-size: 17px;
+                                color: orange;
+                            }
+                        }
+                        .buy-ticket {
+                            position: absolute;
+                            right: 0.5em;
+                            bottom: 1em;
+                            padding: 5px 10px;
+                            border-radius: 12px;
+                            text-align: center;
+                            background-color: #f40;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

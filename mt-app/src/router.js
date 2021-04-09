@@ -25,3 +25,4 @@ export default new router({
     mode: "history",
     routes,
 })
+

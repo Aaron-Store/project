@@ -2,6 +2,7 @@
 @import "@/common/sass/public/footer/index.scss";
 
 $themeColor: orange;
+
 .el-container {
     width: 100%;
     .el-header,
@@ -12,8 +13,8 @@ $themeColor: orange;
         margin: 0 auto;
         padding: 0;
         overflow: unset;
-        .el-row{
-            margin: unset;
+        .el-row {
+            // margin: unset;
         }
     }
     .my-header,
@@ -22,14 +23,23 @@ $themeColor: orange;
         width: 1190px;
         margin: 0 auto;
     }
-    .el-header{
-        background-color: #F8F8F8;
+    .el-header {
+        background-color: #f8f8f8;
     }
     // .el-main{
     //     // background-color: #0095d9;
     // }
-    .red{
+    .red {
         color: #f40;
     }
 
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+    }
 }

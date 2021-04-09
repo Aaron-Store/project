@@ -123,6 +123,7 @@
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
+                box-sizing: border-box;
                 .el-button + .el-button {
                     margin-left: unset;
                 }
@@ -171,9 +172,9 @@
                 margin-left: 10px;
                 text-align: center;
                 font-size: 1em;
+                box-sizing: border-box;
                 img{
                     width: 100px;
-
                 }
                 .last-p{
                     font-size: .5em;
